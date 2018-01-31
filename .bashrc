@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export PATH=${PATH}:${HOME}/bin
+export PATH=${HOME}/bin:${PATH}
 export HISTSIZE=-1
 export HISTFILESIZE=-1
 export HISTTIMEFORMAT="%d/%m/%y %T "
@@ -25,3 +25,5 @@ man() {
       LESS_TERMCAP_us=$(printf "\e[1;32m") \
       man "$@"
 }
+
+xhost +
