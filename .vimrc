@@ -23,8 +23,19 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
+
+" Wrap words or blocks inside quotes or tags
+Plugin 'tpope/vim-surround'
+
+" Comment stuff out using vim commands
+Plugin 'tpope/vim-commentary'
+
+" Completes characters in pairs
+Plugin 'townk/vim-autoclose'
+
 " Put your non-Plugin stuff after this line
 
+filetype plugin indent on
 " Some settings I added
 
 set ai " auto indent
