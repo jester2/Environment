@@ -43,10 +43,11 @@ set si " smart indent
 set ruler
 set nowrap
 set showcmd
-set tabstop=3
-set shiftwidth=3
-set softtabstop=3
-"set expandtab
+set tabstop=8
+set shiftwidth=4
+set softtabstop=0
+set expandtab
+set smarttab
 
 syntax enable " enable syntax highlighting
 
