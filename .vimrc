@@ -33,6 +33,13 @@ Plugin 'tpope/vim-commentary'
 " Completes characters in pairs
 Plugin 'townk/vim-autoclose'
 
+" Nicer looking status bar
+Plugin 'itchyny/lightline.vim'
+
+" file system explorer
+Plugin 'scrooloose/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
+
 " Put your non-Plugin stuff after this line
 
 filetype plugin indent on
@@ -48,6 +55,10 @@ set shiftwidth=4
 set softtabstop=0
 set expandtab
 set smarttab
+set number
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+
 
 syntax enable " enable syntax highlighting
 
