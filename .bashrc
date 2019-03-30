@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias ll='ls -ltrh'
 PS1='[\u@\h \W]\$ '
 
 export PATH=${HOME}/bin:${PATH}
@@ -26,4 +27,3 @@ man() {
       man "$@"
 }
 
-xhost +
